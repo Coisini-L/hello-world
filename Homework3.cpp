@@ -1,17 +1,17 @@
 //实现代码判断2个float变量相等
 //误差精确到小数点后5位
 #include <stdio.h>
-int main ()
+int main()
 {
-	float m,n;
-	printf("Input M & N:");
-	scanf("%f%f",&m,&n);
-	m = ((int)(m*100000))/100000;
-	n = ((int)(n*100000))/100000;
-	if(m == n){
-		printf("Yes");
-		}
-	else{
-	    printf("No");
-   }
+    float m = 1.78;
+    float x = 1.779999, y = 2;
+    float z = m / y, z1 = x / y;
+    float i = m-x;
+    if (i <= 0.00001){
+	
+        z = (m + x) / y;
+    }
+    printf("Z is %f\n", z);
+    printf("Z1 is %f\n", z1);
+    return 0;
 }
