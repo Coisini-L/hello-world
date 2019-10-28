@@ -1,19 +1,23 @@
-//‰∫§Êç¢ÊéíÂ∫è
 #include <stdio.h>
 int main() {
-  int x[3] = {5, 2, 1}, i;
+  int x[100], i,j,n,m;
+  printf("Enter the number of sorts(<=100)£∫\n");
+  scanf("%d",&m);
   while(1) {
-    scanf("%d %d %d", &x[0], &x[1], &x[2]);
-    for(i=0;i<2;i++) {
-      if( x[i] > x[i+1]) {
+  	for (n=0;n<m;n++)
+    scanf("%d", &x[n]);
+    for(j=m-1;j>0;j--){
+		for(i=0;i<j;i++) {
+      		if( x[i] > x[i+1]) {
   	    int temp = x[i];
   	    x[i] = x[i+1];
   	    x[i+1] = temp;
       }
-      i = i + 1;
-      i = i - 1;
-    }
-    printf(" %d, %d, %d", x[0], x[1], x[2]);
+}
+}
+  	for (n=0;n<m;n++)
+    printf(" %d", x[n]);
   }
   return 0;
 }
+//Ωªªª≈≈–Ú

@@ -1,8 +1,28 @@
-//ä¸€ä¸ªæ—…è¡Œç¤¾æœ‰ 72 äººï¼Œå…¶ä¸­ä¼šè‹±è¯­çš„æœ‰ 48 äººï¼Œä¼šä¿„è¯­çš„æœ‰ 36 äººï¼Œä¸¤æ ·éƒ½ä¸ä¼šçš„æœ‰ 8 äººï¼Œä¸¤æ ·éƒ½ä¼šçš„æœ‰
-//_______ä¸ªã€‚
-//ç¼–ç¨‹ï¼šè¾“å…¥æ—…è¡Œç¤¾æœ‰72äºº
-//     è¾“å…¥ä¼šè‹±è¯­48äºº
-//     è¾“å…¥ä¼šä¿„è¯­36äºº
-//     è¾“å…¥ä¸¤æ ·éƒ½ä¸ä¼šæœ‰8äºº
-//     è¾“å‡ºä¸¤æ ·éƒ½ä¼šçš„æœ‰   äºº 
-//     è¾“å‡ºï¼šè¾“å…¥æ•°æ®é”™è¯¯ï¼Œæ— æ³•è®¡ç®—
+#include <stdio.h>
+int main ()
+{
+	int a,b,c,d;
+	printf("Input the number of people in the travel agency£º\n");
+	scanf("%d",&a);
+	printf("Input how many people can speak English£º\n");
+	scanf("%d",&b);
+	printf("Input how many people can speak Russian£º\n");
+	scanf("%d",&c);
+	printf("Input how many people can't speak both languages£º\n");
+	scanf("%d",&d);
+	if(b+d<a && c+d<a && b+c+d>a){
+		printf("People can speak both languages£º%d",b+c-a+d);	
+	}
+	else
+	 printf("Input data error, unable to calculate\n");
+	return 0;
+}
+  
+//Ò»¸öÂÃĞĞÉçÓĞ 72 ÈË£¬ÆäÖĞ»áÓ¢ÓïµÄÓĞ 48 ÈË£¬»á¶íÓïµÄÓĞ 36 ÈË£¬Á½Ñù¶¼²»»áµÄÓĞ 8 ÈË£¬Á½Ñù¶¼»áµÄÓĞ
+//_______¸ö¡£
+//±à³Ì£ºÊäÈëÂÃĞĞÉçÓĞ72ÈË
+//     ÊäÈë»áÓ¢Óï48ÈË
+//     ÊäÈë»á¶íÓï36ÈË
+//     ÊäÈëÁ½Ñù¶¼²»»áÓĞ8ÈË
+//     Êä³öÁ½Ñù¶¼»áµÄÓĞ   ÈË 
+//     Êä³ö£ºÊäÈëÊı¾İ´íÎó£¬ÎŞ·¨¼ÆËã
