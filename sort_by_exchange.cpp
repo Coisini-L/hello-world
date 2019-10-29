@@ -1,8 +1,9 @@
 #include <stdio.h>
 int main() {
-  int x[100], i,j,n,m;
-  printf("Enter the number of sorts(<=100)£º\n");
+  int  i,j,n,m;
+  printf("Enter the number of sorts£º\n");
   scanf("%d",&m);
+  int x[m];
   while(1) {
   	for (n=0;n<m;n++)
     scanf("%d", &x[n]);
