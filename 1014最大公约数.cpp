@@ -1,4 +1,5 @@
-//1014锛氭渶澶у叕绾︽暟
+  
+//1014：最大公约数
 #include <iostream>
 int main() {
     int n, n1, n2;
@@ -6,7 +7,7 @@ int main() {
     for(int i = 0; i < n; ++i) {
         std::cin >> n1 >> n2;
         Number no1(n1), no2(n2);
-        Number no3 = no1.maxDivisor(no2);  //鏈�澶у叕绾︽暟
+        Number no3 = no1.maxDivisor(no2);  //最大公约数
         no3.show();
     }
 }

@@ -1,12 +1,12 @@
-//1012ï¼šè¿›åˆ¶è½¬æ¢
+//1012£º½øÖÆ×ª»»
 #include <iostream>
 int main() {
     int n, n1, n2;
     std::cin >> n;
     for(int i = 0; i < n; ++i) {
         std::cin >> n1 >> n2;
-        Number no1(n1, 10);     //n1æ˜¯10è¿›åˆ¶æ­£æ•´æ•°
-        Number no3 = no1.converto(n2);  //no3æ˜¯n2è¿›åˆ¶çš„æ­£æ•´æ•°
-        no3.show();     //è¾“å‡ºç»“æœ
+        Number no1(n1, 10);     //n1ÊÇ10½øÖÆÕıÕûÊı
+        Number no3 = no1.converto(n2);  //no3ÊÇn2½øÖÆµÄÕıÕûÊı
+        no3.show();     //Êä³ö½á¹û
     }
 }

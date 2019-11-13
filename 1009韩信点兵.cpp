@@ -1,14 +1,15 @@
-//1009О╪ И÷╘Д©║Г┌╧Е┘╣
+  
+//1009ё╨╨╚пе╣Ц╠Ь
 #include <iostream>
 int main() {
     int n, n1, n2;
     std::cin >> n;
     for(int i = 0; i < n; ++i) {
         std::cin >> n1 >> n2 >> n3;
-        HanXin hx;  //И÷╘Д©║
-        hx.line3(n1);  //3Д╨╨Д╦─Ф▌▓
-        hx.line5(n2);   //5Д╨╨Д╦─Ф▌▓
-        hx.line7(n3);   //7Д╨╨Д╦─Ф▌▓
+        HanXin hx;  //╨╚пе
+        hx.line3(n1);  //3хкр╩ее
+        hx.line5(n2);   //5хкр╩ее
+        hx.line7(n3);   //7хкр╩ее
         hx.showMany();
     }
 }

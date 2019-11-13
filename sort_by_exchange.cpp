@@ -14,7 +14,7 @@ int main() {
   	    x[i] = x[i+1];
   	    x[i+1] = temp;
       }
-}
+   }
 }
   	for (n=0;n<m;n++)
     printf(" %d", x[n]);

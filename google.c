@@ -1,4 +1,39 @@
-//f(n)å‡½æ•°çš„å®šä¹‰ä¸º0~nä¸­åŒ…å«çš„1çš„ä¸ªæ•°
-//f(13)æ˜¯0~13ä¸­åŒ…å«1çš„æœ‰ 1ï¼Œ10ï¼Œ11ï¼Œ12ï¼Œ13ï¼Œæ‰€ä»¥f(13)=6
-//f(1) = 1ã€‚
-//æ±‚å¦ä¸€ä¸ªf(n)=nçš„nå€¼
+//f(n)º¯ÊıµÄ¶¨ÒåÎª0~nÖĞ°üº¬µÄ1µÄ¸öÊı
+//f(13)ÊÇ0~13ÖĞ°üº¬1µÄÓĞ 1£¬10£¬11£¬12£¬13£¬ËùÒÔf(13)=6
+//f(1) = 1¡£
+//ÇóÁíÒ»¸öf(n)=nµÄnÖµ
+
+#include <stdio.h>
+//ÉùÃ÷¶¨Òåº¯Êıcal 
+int cal(int n){
+    int count=0,temp=1,high=0,low,least=0;
+    while(n/temp!=0) {                              
+        low = n % temp;                    
+        high = n / (temp * 10);            
+        least = (n / temp) % 10;            
+        if (least == 0) {
+            count += high * temp;                      
+        } else if (least == 1) {
+            count += high * temp + low + 1;            
+        } else {
+            count += (high + 1) * temp;     
+        }
+        temp *= 10;
+    }
+    return count;
+}
+
+//Ê¹ÓÃº¯Êı 
+int main(){
+    int i,res;
+    i=2;
+    while(1){
+        res=cal(i);
+        if (res==i){
+            printf("%d",i);
+            break;
+        }
+        i++;
+    }
+    return 0;
+}
